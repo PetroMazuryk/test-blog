@@ -3,9 +3,11 @@ import FeedIcon from '@mui/icons-material/Feed';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 import styles from './Header.module.scss';
+import { useSelector } from 'react-redux';
+import { selectIsAuth } from 'redux/slices/auth';
 
 export const Header = () => {
-  const isAuth = false;
+  const isAuth = useSelector(selectIsAuth);
 
   const onClickLogout = () => {};
 
