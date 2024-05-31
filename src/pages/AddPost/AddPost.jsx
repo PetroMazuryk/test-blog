@@ -37,7 +37,7 @@ export const AddPost = () => {
   return (
     <Paper style={{ padding: 30 }}>
       <Button variant="outlined" size="large">
-       Завантажити превю
+        Завантажити превю
       </Button>
       <input type="file" onChange={handleChangeFile} hidden />
       {imageUrl && (
@@ -57,13 +57,13 @@ export const AddPost = () => {
       <TextField
         classes={{ root: styles.title }}
         variant="standard"
-        placeholder="Заголовок статьи..."
+        placeholder="Заголовок статті..."
         fullWidth
       />
       <TextField
         classes={{ root: styles.tags }}
         variant="standard"
-        placeholder="Тэги"
+        placeholder="Теги"
         fullWidth
       />
       <SimpleMDE
