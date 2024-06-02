@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { Post } from '../components/Post/Post';
 import { Index } from '../components/AddComment/AddComment';
-import { CommentsBlock } from '../components/UserInfo/CommentsBlock';
+import { CommentsBlock } from '../components/CommentsBlock';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
@@ -48,7 +48,7 @@ const FullPost = () => {
               fullName: 'Jastin Wilson',
               avatarUrl: 'https://mui.com/static/images/avatar/1.jpg',
             },
-            text: 'Це текстовий коментарій 3333',
+            text: 'Це текстовий коментарій ',
           },
           {
             user: {

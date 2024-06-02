@@ -7,19 +7,19 @@ import EyeIcon from '@mui/icons-material/RemoveRedEyeOutlined';
 import CommentIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
 
 import styles from './Post.module.scss';
-// import { UserInfo } from '../../components/UserInfo/UserInfo';
+import { UserInfo } from '../../components/UserInfo/UserInfo';
 import { PostSkeleton } from './Skeleton';
 
 export const Post = ({
   id,
   title,
-  // createdAt,
+  createdAt,
   imageUrl,
-  // user,
+  user,
   viewsCount,
   commentsCount,
   tags,
-  // children,
+  children,
   isFullPost,
   isLoading,
   isEditable,
@@ -52,7 +52,7 @@ export const Post = ({
         />
       )}
       <div className={styles.wrapper}>
-        {/* <UserInfo {...user} additionalText={createdAt} /> */}
+        <UserInfo {...user} additionalText={createdAt} />
         <div className={styles.indention}>
           <h2
             className={clsx(styles.title, { [styles.titleFull]: isFullPost })}
@@ -66,7 +66,7 @@ export const Post = ({
               </li>
             ))}
           </ul>
-          {/* {children && <div className={styles.content}>{children}</div>} */}
+          {children && <div className={styles.content}>{children}</div>}
           <ul className={styles.postDetails}>
             <li>
               <EyeIcon />
