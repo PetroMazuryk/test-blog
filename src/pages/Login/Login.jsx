@@ -17,7 +17,6 @@ const Login = () => {
   const {
     register,
     handleSubmit,
-
     formState: { errors },
   } = useForm({
     defaultValues: {
@@ -28,7 +27,6 @@ const Login = () => {
   });
 
   const onSubmit = values => {
-    console.log(values);
     dispatch(fetchAuth(values));
   };
 
